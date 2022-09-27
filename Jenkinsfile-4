@@ -3,7 +3,7 @@ pipeline {
   environment {
     AAA_TOP_LEVEL_VAR = 'topLevel'
     AAA_RANDOM_VAR = sh(returnStdout:true,script:'openssl rand -base64 19').trim()
-  }
+  
   stages {
     stage('stage 1') {
       steps {
